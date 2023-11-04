@@ -41,3 +41,9 @@ const printMyName1 = printFullName.bind(obj1, "Nagpur", "Maharashtra");
 printMyName1("India");
 const printMyName2 = printFullName.bind(obj1, "Langley", "London");
 printMyName2("UK");
+
+/*
+For all of above code output of console will be:
+Gaurav Chachada from Nagpur, Maharashtra, India
+Karishma Goyal from Langley, London, UK
+*/
