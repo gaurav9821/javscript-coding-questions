@@ -8,12 +8,17 @@ console.log("Using pre defined map() method " + mapArr);
 
 //Polyfill for map()
 Array.prototype.myMap = function (cb) {
-  let arr = [];
+  let temp = [];
 
   for (let i = 0; i < this.length; i++) {
-    arr.push(cb(this[i], i, this));
+    temp.push(cb(this[i], i, this));
   }
-  return arr;
+  return temp;
 };
 
-console.log("Using pollyfil of map() method which is myMap() " + mapArr);
+//testing
+let myMapArr = arr.myMap((item, index, arr) => {
+  return item * 2;
+});
+
+console.log("Using pollyfil of map() method which is myMap() " + myMapArr);
