@@ -47,3 +47,7 @@ For all of above code output of console will be:
 Gaurav Chachada from Nagpur, Maharashtra, India
 Karishma Goyal from Langley, London, UK
 */
+
+console.log(a);
+
+let a = 10;
